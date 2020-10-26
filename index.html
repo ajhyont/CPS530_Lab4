@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CPS530 Lab 4</title>
 <!-- CSS external file -->
-	<link rel="stylesheet" href="dummyLab03.css">
+	<link rel="stylesheet" href="lab4.css">
 <!-- enabling bootstrap 4 -->	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +18,60 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
 </head>
 <body>	
-	<a href="http://www2.scs.ryerson.ca/~ajhyont/cgi-bin/test.cgi">click here</a>
+	<!--Part I -->
+	<h1 style="background-color: white; color: black;">Part I of Lab4:</h1>
+	<a class="h1" href="http://www2.scs.ryerson.ca/~ajhyont/cgi-bin/lab4-p1.pl" target="_blank">Part I</a> <br>	
+	<hr>
+	<h1>Part II of Lab4:</h1>
+	<!--Part II -->	
+	<form action="http://www2.scs.ryerson.ca/~ajhyont/cgi-bin/lab4-p2.pl" method="get" target="_blank">
+		<!-- input type: text -->
+		<label for="fname">First name:</label>
+		<input type="text" id="fname" name="fname" placeholder="first name"><br>
+		<label for="Lname">Last Name:</label>
+		<input type="text" id="Lname" name="Lname" placeholder="Last name"><br>
 
+		<!-- input type: checkbox -->
+		<h4>Some Hobbies I enjoy are: </h4><br>
+		<input type="checkbox" id="Cooking" name="hobbies" value="Cooking">
+		<label for="Cooking">Cooking</label><br>
+		<input type="checkbox" id="Dancing" name="hobbies" value="Dancing">
+		<label for="Dancing">Dancing</label><br>
+		<input type="checkbox" id="Singing" name="hobbies" value="Singing">
+		<label for="Singing">Singing</label><br>
+		<input type="checkbox" id="Painting" name="hobbies" value="Painting">
+		<label for="Painting">Painting</label><br>
+		<input type="checkbox" id="other" name="hobbies" value="other">
+		<label for="other">other</label><br>
+
+		<!-- input type: radio buttons -->
+		<h4>My gender is: </h4>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">female</label><br>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">other</label><br>
+
+		<!-- input type: dropdown -->
+		<h4>My favourite movie category: </h4>
+		<select id="movieCategory">
+			<option value="Horror">Horror</option>
+			<option value="Comedy">Comedy</option>
+			<option value="Action">Action</option>
+			<option value="Romance">Romance</option>
+			<option value="mystery">mystery</option>
+			<option value="thriller">thriller</option>
+			<option value="fantasy">fantasy</option>
+			<option value="Drama">Drama</option>
+		</select>
+
+		<!-- input type: textarea -->
+		<h4>I few words about myself: </h4>
+		<textarea id="summary" name="summary" rows="5" cols="100" placeholder="write something about urself...."></textarea><br>
+
+		<!-- input type: submit -->
+		<input class="btn btn-primary" type="submit" value="submit">
+	</form>
 </body>
 </html>
